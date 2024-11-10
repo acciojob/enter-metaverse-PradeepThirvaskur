@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    
 </body>
+<script>
+    let div= document.createElement("div");
+    div.innerHTML="<p>Enter the Metaverse</p>";
+    document.body.append(div);
 
+    let button= document.createElement("button");
+    button.innerText="Enter";
+    document.body.append(button);
+
+    button.addEventListener("click",()=>{  div.innerHTML="<h1>Entered Metaverse</h1>"});
+   
+      
+    
+</script>
 </html>
